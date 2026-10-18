@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toulin Fashion | New Season Women, Men &amp; Kids</title>
+<meta name="description" content="Toulin Fashion — discover the new season for women, men and kids.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#1F3B34;--ink:#141414;--paper:#FAFAF8;--line:#E4DFD6;--muted:#5A544B}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;font-size:15px;line-height:1.5}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.75}
+.wrap{max-width:1440px;margin:0 auto;padding:0 48px}
+.serif{font-family:'Bodoni Moda',serif;font-weight:400}
+.eyebrow{font-size:13px;letter-spacing:.2em;font-weight:500;text-transform:uppercase}
+.btn{display:inline-block;padding:14px 32px;font-size:13px;letter-spacing:.14em;font-weight:500;text-transform:uppercase}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-line{border:1px solid #fff;color:#fff}
+svg.g{fill:rgba(20,20,20,.82)}
+/* header */
+.bar{background:var(--accent);color:#fff;text-align:center;padding:10px 24px;font-size:13px;letter-spacing:.04em}
+header .top{display:flex;justify-content:center;align-items:center;height:76px}
+.logo{font-family:'Bodoni Moda',serif;font-size:34px;font-weight:500;letter-spacing:.32em;padding-left:.32em}
+nav{display:flex;justify-content:center;gap:40px;padding:14px 0 16px;border-top:1px solid var(--line);font-size:13px;font-weight:500;letter-spacing:.14em}
+nav .sale{color:var(--accent)}
+/* hero */
+.hero{display:flex;gap:16px;flex-wrap:wrap}
+.panel{position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.panel svg{position:absolute}
+.panel>*:not(svg){position:relative}
+.p-main{flex:1.5 1 640px;min-height:700px;background:#D8CFC2;padding:48px}
+.p-main svg{right:9%;top:7%;width:36%;height:auto}
+.p-main h1{margin:12px 0 24px;font-size:84px;line-height:1;letter-spacing:-.01em;max-width:560px}
+.stack{flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:16px}
+.p-side{flex:1;min-height:342px;padding:32px}
+.p-men{background:#C9D3CC}.p-men svg{right:9%;top:9%;width:30%;height:auto}
+.p-kids{background:#E3D3C3}.p-kids svg{right:11%;top:14%;width:24%;height:auto}
+.p-side h2{margin:0 0 8px;font-size:40px;line-height:1.05}
+.p-side .link{font-size:13px;letter-spacing:.14em;font-weight:500;text-decoration:underline;text-transform:uppercase}
+/* sections */
+section.s{padding-top:96px}
+.head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:32px}
+.head h2{margin:0;font-size:44px}
+.head a{font-size:13px;letter-spacing:.14em;font-weight:500;text-decoration:underline;text-transform:uppercase}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.tile .img{aspect-ratio:4/5;display:flex;align-items:center;justify-content:center}
+.tile .img svg{width:56%;height:auto}
+.tile .label{display:block;margin-top:14px;font-size:14px;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+.prod .img{aspect-ratio:3/4;display:flex;align-items:center;justify-content:center}
+.prod .img svg{width:52%;height:auto}
+.prod .name{display:block;margin-top:12px;font-size:14px}
+.prod .shop{font-size:12px;letter-spacing:.14em;font-weight:700;text-transform:uppercase;text-decoration:underline}
+/* editorial */
+.edit{display:flex;flex-wrap:wrap;background:var(--accent);color:#fff;min-height:520px}
+.edit .txt{flex:1 1 480px;padding:72px;display:flex;flex-direction:column;justify-content:center;gap:24px;align-items:flex-start}
+.edit h2{margin:0;font-size:60px;line-height:1.05}
+.edit .pic{flex:1 1 480px;min-height:360px;background:#B9A98F;display:flex;align-items:center;justify-content:center;gap:4%}
+.edit .pic svg{height:auto}
+/* footer */
+footer{background:var(--ink);color:#E9E6E0;margin-top:112px}
+footer .cols{display:flex;flex-wrap:wrap;gap:48px;padding-top:72px;padding-bottom:40px}
+footer .col{flex:1 1 160px;display:flex;flex-direction:column;gap:10px;font-size:14px}
+footer .col.brand{flex:1.4 1 280px;gap:16px}
+footer h3{margin:0 0 6px;font-size:12px;letter-spacing:.18em;font-weight:700;color:#fff}
+footer .fl{font-family:'Bodoni Moda',serif;font-size:30px;letter-spacing:.32em;color:#fff}
+footer .copy{border-top:1px solid #3A3A38;padding-top:24px;padding-bottom:32px;font-size:13px;color:#B8B3AA}
+@media (max-width:900px){
+ .wrap{padding:0 16px}
+ header .top{height:60px}.logo{font-size:26px;letter-spacing:.28em}
+ nav{justify-content:flex-start;overflow-x:auto;gap:28px;padding:0 16px;height:48px;align-items:center;white-space:nowrap;font-size:12px}
+ .p-main{min-height:560px;padding:28px 20px;flex-basis:100%}.p-main svg{right:8%;width:54%}
+ .p-main h1{font-size:52px}
+ .stack{flex-direction:row;gap:8px}.p-side{min-height:180px;padding:16px}.p-side h2{font-size:24px}.p-side .link{display:none}
+ .p-men svg{right:12%;width:42%}.p-kids svg{right:14%;width:34%}
+ section.s{padding-top:56px}.head h2{font-size:32px}
+ .grid4{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .edit{flex-direction:column}.edit .txt{padding:32px 24px}.edit h2{font-size:36px}.edit .pic{min-height:240px;flex:none}
+ footer .cols{padding-top:40px;gap:28px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="dress" viewBox="0 0 120 160"><path d="M46 12 L60 26 L74 12 L82 18 L75 54 L96 152 L24 152 L45 54 L38 18 Z"/><path d="M45 54 H75" stroke="#FAFAF8" stroke-width="2" fill="none"/></symbol>
+<symbol id="shirt" viewBox="0 0 120 160"><path d="M40 16 Q60 30 80 16 L110 38 L98 62 L86 54 V148 H34 V54 L22 62 L10 38 Z"/><path d="M60 30 V148" stroke="#FAFAF8" stroke-width="1.5" fill="none"/></symbol>
+<symbol id="coat" viewBox="0 0 120 160"><path d="M44 12 L60 34 L76 12 L108 34 L100 142 H82 V70 L60 82 L38 70 V142 H20 L12 34 Z"/><path d="M60 34 V142" stroke="#FAFAF8" stroke-width="1.5" fill="none"/></symbol>
+<symbol id="bag" viewBox="0 0 120 160"><path d="M26 64 H94 L100 146 H20 Z"/><path d="M42 64 C42 22 78 22 78 64" fill="none" stroke="rgba(20,20,20,.82)" stroke-width="5"/></symbol>
+</defs>
+</svg>
+
+<div class="bar">The new season has arrived</div>
+
+<header class="wrap">
+<div class="top"><a href="/" class="logo">TOULIN</a></div>
+<nav aria-label="Main">
+<a href="#women">NEW IN</a><a href="#women">WOMEN</a><a href="#men">MEN</a><a href="#kids">KIDS</a><a href="#categories">ACCESSORIES</a><a href="#lookbook">LOOKBOOK</a>
+</nav>
+</header>
+
+<main>
+<section class="wrap hero" aria-label="Featured">
+<a href="#women" id="women" class="panel p-main">
+<svg viewBox="0 0 120 160" class="g" aria-hidden="true"><use href="#dress"/></svg>
+<span class="eyebrow">New season</span>
+<h1 class="serif">The Autumn Edit</h1>
+<span class="btn btn-dark" style="align-self:flex-start">Shop women</span>
+</a>
+<div class="stack">
+<a href="#men" id="men" class="panel p-side p-men"><svg viewBox="0 0 120 160" class="g" aria-hidden="true"><use href="#shirt"/></svg><h2 class="serif">Men's Essentials</h2><span class="link">Shop men</span></a>
+<a href="#kids" id="kids" class="panel p-side p-kids"><svg viewBox="0 0 120 160" class="g" aria-hidden="true"><use href="#shirt"/></svg><h2 class="serif">Kids' Favourites</h2><span class="link">Shop kids</span></a>
+</div>
+</section>
+
+<section class="wrap s" id="categories">
+<div class="head"><h2 class="serif">Shop by category</h2></div>
+<div class="grid4">
+<a class="tile" href="#women"><div class="img" style="background:#E3D3C3"><svg viewBox="0 0 120 160" class="g" aria-hidden="true"><use href="#dress"/></svg></div><span class="label">Dresses</span></a>
+<a class="tile" href="#women"><div class="img" style="background:#C9D3CC"><svg viewBox="0 0 120 160" class="g" aria-hidden="true"><use href="#shirt"/></svg></div><span class="label">Tops &amp; shirts</span></a>
+<a class="tile" href="#women"><div class="img" style="background:#D8CFC2"><svg viewBox="0 0 120 160" class="g" aria-hidden="true"><use href="#coat"/></svg></div><span class="label">Outerwear</span></a>
+<a class="tile" href="#women"><div class="img" style="background:#DCD3E0"><svg viewBox="0 0 120 160" class="g" aria-hidden="true"><use href="#bag"/></svg></div><span class="label">Accessories</span></a>
+</div>
+</section>
+
+<section class="wrap s" id="new">
+<div class="head"><h2 class="serif">New arrivals</h2></div>
+<div class="grid4">
+<a class="prod" href="#women"><div class="img" style="background:#E4DFD6"><svg viewBox="0 0 120 160" class="g" aria-hidden="true"><use href="#dress"/></svg></div><span class="name">Dresses</span><span class="shop">Shop now</span></a>
+<a class="prod" href="#women"><div class="img" style="background:#DDE3DC"><svg viewBox="0 0 120 160" class="g" aria-hidden="true"><use href="#shirt"/></svg></div><span class="name">Tops &amp; shirts</span><span class="shop">Shop now</span></a>
+<a class="prod" href="#women"><div class="img" style="background:#E8DDD0"><svg viewBox="0 0 120 160" class="g" aria-hidden="true"><use href="#coat"/></svg></div><span class="name">Outerwear</span><span class="shop">Shop now</span></a>
+<a class="prod" href="#women"><div class="img" style="background:#E0DCE3"><svg viewBox="0 0 120 160" class="g" aria-hidden="true"><use href="#bag"/></svg></div><span class="name">Accessories</span><span class="shop">Shop now</span></a>
+</div>
+</section>
+
+<section class="wrap s" id="lookbook">
+<div class="edit">
+<div class="txt">
+<span class="eyebrow">The lookbook</span>
+<h2 class="serif">Dressed for every occasion</h2>
+<span class="btn btn-line">Coming soon</span>
+</div>
+<div class="pic">
+<svg viewBox="0 0 120 160" class="g" style="width:34%" aria-hidden="true"><use href="#coat"/></svg>
+<svg viewBox="0 0 120 160" class="g" style="width:30%" aria-hidden="true"><use href="#dress"/></svg>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap cols">
+<div class="col brand"><span class="fl">TOULIN</span><span style="max-width:280px;color:#B8B3AA">Fashion for women, men and kids.</span></div>
+<div class="col"><h3>SHOP</h3><a href="#women">Women</a><a href="#men">Men</a><a href="#kids">Kids</a><a href="#categories">Accessories</a></div>
+</div>
+<div class="wrap copy">© 2026 Toulin Fashion. All rights reserved.</div>
+</footer>
+</body>
+</html>
